@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Emma Davis</title>
+  <meta name="geo.position" content="34.0617;-118.3435" />
+  <meta name="geo.region" content="US-CA" />
+  <meta name="geo.placename" content="Wilshire Blvd & La Brea Ave" />
+</head>
+<body>
+  <h1>Dr. Emma Davis</h1>
+  <p>Cardiology</p>
+  <p><strong>Location:</strong> <span data-location="Wilshire Blvd & La Brea Ave" data-lat="34.0617" data-lng="-118.3435">Wilshire Blvd & La Brea Ave</span></p>
+
+  <div id="location-set" data-location="Wilshire Blvd & La Brea Ave" data-lat="34.0617" data-lng="-118.3435">
+    <input type="hidden" name="doctorLocation" value="Wilshire Blvd & La Brea Ave" />
+    <input type="hidden" name="doctorLat" value="34.0617" />
+    <input type="hidden" name="doctorLng" value="-118.3435" />
+  </div>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    "name": "Wilshire Blvd & La Brea Ave",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0617,
+      "longitude": -118.3435
+    }
+  }
+  </script>
+</body>
+</html>
